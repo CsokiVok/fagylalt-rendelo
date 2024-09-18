@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fagylalt rendelés</title>
+</head>
+<body >
+  <form id="FagyiForm" class="container">
+    <div class="mb-3">
+      <label for="InputName" class="form-label">Saját név:</label>
+      <input type="text" class="form-control" id="InputName">
+      <p id="NameError"></p>
+    </div>
+    <div class="mb-3">
+      <label for="InputPassword" class="form-label">Jelszó:</label>
+      <input type="password" class="form-control" name="pass" id="InputPassword" aria-describedby="PasswordHelp">
+      <div id="PasswordHelp" class="form-text">A jelszónak 8 karakternek kell lennie minimum!</div>
+      <p id="PasswordCounter"></p>
+      <div class="mb-3">
+        <label for="InputFagyi" class="form-label">Fagylalt:</label>
+        <input type="text" class="form-control" id="InputFagyi">
+      </div>
+      <button type="submit" id="button" class="btn btn-primary">Küldés</button>
+    </form>
+    <p id="FagyiStatus"></p>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
